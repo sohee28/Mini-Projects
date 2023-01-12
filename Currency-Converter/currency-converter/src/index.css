@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #C7CCDB;
+  font-family: 'Advent Pro', sans-serif;
+
+}
+

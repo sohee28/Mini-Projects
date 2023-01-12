@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items:center;
+  min-height: 100vh;
+}
+
+.title{
+  padding:30px;
+  font-size: 70px;
+}
+
+.equal{
+  padding: 60px;
+  padding-left: 80px;
+  padding-right:80px;
+  margin-top: 85px;
+  font-size: 120px;
+  
+}
+.mainarea{
+  max-width: 40vw;
+  padding: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
