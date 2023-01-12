@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balthazar&display=swap");
+
+/*font-family: 'Balthazar', serif;font-family: 'Roboto', sans-serif;font-family: 'Dancing Script', cursive; */
+
+*,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* HomePage */
+
+.Home {
+  background-image: url(/images/bakeback.jpeg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.Navbar {
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-family: "Balthazar", serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.logo .fa-bread-slice {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.navbar-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.navbar-ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-ul li a:hover {
+  text-decoration: underline;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 82%;
+  padding-bottom: 3rem;
+}
+
+.welcome h1 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  padding: 0.5rem;
+  font-size: 60px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  opacity: 0;
+  animation: fadeUp 0.8s forwards;
+  animation-delay: 0.3s;
+}
+.welcome h2 {
+  font-family: "Balthazar", serif;
+  color: white;
+  padding: 1rem;
+  font-size: 20px;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: scale 0.8s forwards;
+  animation-delay: 0.3s;
+}
+
+.welcome .horizontalline {
+  width: 80px;
+  align-self: center;
+  color: white;
+  opacity: 0;
+  animation: grow 0.5s forwards;
+  animation-delay: 1s;
+}
+
+.welcome .line {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.welcome .fa-bread-slice {
+  padding: 0rem 1rem;
+  color: white;
+  font-size: 15px;
+  opacity: 0;
+  animation: spin 0.5s forwards;
+  animation-delay: 1s;
+}
+
+/* Our Story Page */
+.storycontainer {
+  margin: 4rem 7rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 7rem;
+}
+
+.storycontainer img {
+  height: 350px;
+  width: auto;
+}
+
+.ourstory_info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.ourstory_info h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  letter-spacing: 4px;
+  word-spacing: 2px;
+  font-weight: 600;
+}
+.ourstory_info p {
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  font-size: 13px;
+}
+
+/* Recipe Page */
+.OurRecipe {
+  background-image: url(/images/backback.jpeg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  height: 100vh;
+}
+
+.recipetitle {
+  height: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.8rem;
+}
+
+.recipetitle2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.recipetitle h1 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  font-size: 55px;
+  letter-spacing: 4px;
+  padding: 0.5rem;
+}
+.recipetitle a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+.recipetitle a:hover {
+  color: gray;
+}
+
+/* Menu */
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  width: auto;
+}
+
+.menuinfos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  padding: 2.5rem;
+  gap: 1.5rem;
+}
+
+.menutitle {
+  font-family: "Dancing Script", cursive;
+  font-size: 55px;
+  color: black;
+  letter-spacing: 4px;
+}
+
+.menuinfos p {
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.menuinfos a {
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  margin-top: 2rem;
+}
+
+.menuinfos a:hover {
+  color: black;
+}
+
+.menuphotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  gap: 1.5rem;
+}
+.menuphoto1 img {
+  height: 230px;
+  width: auto;
+}
+.menuphoto2 img {
+  height: 485px;
+  width: auto;
+}
+
+.menuphoto1 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.menuinfos .horizontalline {
+  width: 130px;
+  align-self: center;
+  color: black;
+}
+
+.menuinfos .line {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+.menuinfos .fa-bread-slice {
+  padding: 0rem 1rem;
+  color: black;
+  font-size: 15px;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #26262e;
+  color: white;
+}
+
+.footercontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.footercontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.footersocial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+  text-align: end;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  font-size: 25px;
+}
+
+.footer-icon:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.footersocial p {
+  font-size: 13px;
+}
+.footercontact_detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  color: gray;
+  font-family: "Roboto", sans-serif;
+}
+.footer_phone,
+.footer_location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.footer-logo {
+  color: white;
+  font-family: "Balthazar", serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.footer-logo.fa-bread-slice {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+  }
+  .storycontainer {
+    margin: 4rem 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  .welcome {
+    padding-bottom: 8rem;
+  }
+  .welcome h1 {
+    font-size: 45px;
+  }
+  .welcome h2 {
+    font-size: 18px;
+  }
+  .recipetitle {
+    padding-bottom: 2rem;
+  }
+  .recipetitle h1 {
+    font-size: 40px;
+    padding: 0.5rem;
+  }
+  .recipetitle a {
+    font-size: 15px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: auto;
+    margin-bottom: 5rem;
+  }
+  .menuphoto1 img {
+    height: 150px;
+    width: auto;
+  }
+  .menuphoto2 img {
+    height: 325px;
+    width: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .menuphoto1 img {
+    height: 130px;
+    width: auto;
+  }
+  .menuphoto2 img {
+    height: 280px;
+    width: auto;
+  }
+
+  footer {
+    height: 50vh;
+  }
+
+  .footercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .footersocial {
+    text-align: center;
+    align-self: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-logo.fa-bread-slice {
+    font-size: 18px;
+  }
+  .navbar-ul li a {
+    font-size: 14px;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(100%);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+}

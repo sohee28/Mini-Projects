@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/recipe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>BakedBread</title>
+  </head>
+  <body>
+    <!-- Home Page -->
+    <section class="RecipePage" id="RecipePage">
+      <div class="Navbar">
+        <div class="container">
+          <h2 class="logo"><i class="fas fa-bread-slice"></i> BAKEDBREAD</h2>
+          <nav>
+            <ul class="navbar-ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#ourstory">Our Story</a></li>
+              <li><a href="index.html#OurRecipe">Recipe</a></li>
+              <li><a href="index.html#menu">Menu</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="recipepage_main">
+        <div class="recipepage_bread_photo">
+          <img class="breads4" src="../images/breads4.jpeg" alt="" />
+          <img class="breads1" src="../images/breads1.jpeg" alt="" />
+        </div>
+        <div class="recipepage_main_info">
+          <h3>Our Recipe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga unde
+            maiores exercitationem fugiat beatae accusantium hic aspernatur
+            voluptates tenetur blanditiis similique laborum praesentium sequi
+            explicabo, quidem impedit officiis. Accusamus, id! Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Ingredient / Nutrient Page-->
+
+    <section class="ingredientpage">
+      <div class="ingredientpage_info">
+        <h3>Ingredient / Nutrients</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia esse
+          tempore ducimus praesentium, consectetur doloremque placeat! Eaque
+          natus deserunt incidunt iusto sint molestias cum exercitationem
+          veniam. Impedit, reiciendis eaque! Eaque natus deserunt incidunt iusto
+          sint molestias cum exercitationem veniam. Impedit, reiciendis eaque!
+          Eaque natus deserunt incidunt iusto sint molestias cum exercitationem
+          veniam. Impedit, reiciendis eaque!
+        </p>
+        <button>View Full Nutrients</button>
+      </div>
+      <div class="ingredientpage_photo">
+        <img src="../images/breads3.jpeg" alt="" />
+      </div>
+    </section>
+
+    <!-- Footer / Contact Us page -->
+    <footer class="footer" id="contact">
+      <div class="footercontainer">
+        <div class="footercontact">
+          <h4 class="footer-logo">
+            <i class="fas fa-bread-slice"></i> BAKEDBREAD
+          </h4>
+          <div class="footercontact_detail">
+            <div class="footer_phone">
+              <h5>Phone</h5>
+              <h5>Location</h5>
+            </div>
+            <div class="footer_location">
+              <h5>123 - 456 - 7890</h5>
+              <h5>1234 baked bread Street</h5>
+            </div>
+          </div>
+        </div>
+        <div class="footersocial">
+          <div class="social">
+            <i class="fab fa-twitter footer-icon"></i>
+            <i class="fab fa-instagram footer-icon"></i>
+            <i class="fab fa-facebook-square footer-icon"></i>
+            <i class="fab fa-yelp footer-icon"></i>
+          </div>
+          <p>&copy 2020 - 2021 BakedBread | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      ScrollReveal().reveal(".recipepage_main_info", {
+        origin: "right",
+        duration: 1000,
+        distance: "25rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".breads1", {
+        origin: "bottom",
+        duration: 1000,
+        distance: "10rem",
+        delay: 500,
+        reset: true,
+      });
+      ScrollReveal().reveal(".breads4", {
+        origin: "top",
+        duration: 1000,
+        distance: "10rem",
+        delay: 500,
+        reset: true,
+      });
+      ScrollReveal().reveal(".ingredientpage_info", {
+        origin: "left",
+        duration: 1000,
+        distance: "25rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".ingredientpage_photo", {
+        scale: 0,
+        duration: 1000,
+        delay: 400,
+        reset: true,
+      });
+    </script>
+  </body>
+</html>

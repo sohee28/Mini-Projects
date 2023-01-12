@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>BakedBread</title>
+  </head>
+  <body>
+    <!-- Home Page -->
+    <section class="Home" id="Home">
+      <div class="Navbar">
+        <div class="container">
+          <h2 class="logo"><i class="fas fa-bread-slice"></i> BAKEDBREAD</h2>
+          <nav>
+            <ul class="navbar-ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#ourstory">Our Story</a></li>
+              <li><a href="#OurRecipe">Recipe</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="welcome">
+        <h1>Welcome</h1>
+        <div class="line">
+          <hr class="horizontalline" />
+          <i class="fas fa-bread-slice"></i>
+          <hr class="horizontalline" />
+        </div>
+        <h2>BAKEDBREAD</h2>
+      </div>
+    </section>
+
+    <!-- Our Story Page -->
+    <section class="ourstory" id="ourstory">
+      <div class="storycontainer">
+        <img src="../images/baguette.jpeg" alt="" />
+        <div class="ourstory_info animation-right">
+          <h1>Our Story</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad fugiat
+            unde sint quasi cumque, pariatur ipsam rem adipisci molestiae
+            nesciunt ipsa quos aut exercitationem facere, voluptatum facilis ea
+            odio porro.Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+            fugiat unde sint quasi cumque, pariatur ipsam rem adipisci molestiae
+            nesciunt ipsa quos aut exercitationem facere.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recipe Page -->
+    <section class="OurRecipe" id="OurRecipe">
+      <div class="recipetitle">
+        <div class="recipetitle2">
+          <h1>Our Recipe</h1>
+        </div>
+        <a href="fullrecipe.html">View Recipe Page</a>
+      </div>
+    </section>
+
+    <!-- Menu Page -->
+    <section class="menu" id="menu">
+      <div class="menuinfos">
+        <h1 class="menutitle">Menu</h1>
+        <div class="line">
+          <hr class="horizontalline" />
+          <i class="fas fa-bread-slice"></i>
+          <hr class="horizontalline" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          blanditiis hic in quibusdam exercitationem aliquam illum eligendi,
+          autem cupiditate laboriosam eaque eos ipsum ab earum error accusamus
+          quia molestias necessitatibus.
+        </p>
+        <a href="fullmenu.html">View Our Full Menu</a>
+      </div>
+      <div class="menuphotos">
+        <div class="menuphoto1">
+          <img class="menuphoto1_1" src="../images/bread2.jpeg" alt="" />
+          <img class="menuphoto1_2" src="../images/crowasan.jpeg" alt="" />
+        </div>
+        <div class="menuphoto2">
+          <img src="../images/cookie.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact Us page -->
+    <footer class="footer" id="contact">
+      <div class="footercontainer">
+        <div class="footercontact">
+          <h4 class="footer-logo">
+            <i class="fas fa-bread-slice"></i> BAKEDBREAD
+          </h4>
+          <div class="footercontact_detail">
+            <div class="footer_phone">
+              <h5>Phone</h5>
+              <h5>Location</h5>
+            </div>
+            <div class="footer_location">
+              <h5>123 - 456 - 7890</h5>
+              <h5>1234 baked bread Street</h5>
+            </div>
+          </div>
+        </div>
+        <div class="footersocial">
+          <div class="social">
+            <i class="fab fa-twitter footer-icon"></i>
+            <i class="fab fa-instagram footer-icon"></i>
+            <i class="fab fa-facebook-square footer-icon"></i>
+            <i class="fab fa-yelp footer-icon"></i>
+          </div>
+          <p>&copy 2020 - 2021 BakedBread | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+
+      ScrollReveal().reveal(".storycontainer img", {
+        reset: true,
+        delay: 100,
+        scale: 0,
+        opacity: 1,
+        duration: 1000,
+      });
+      ScrollReveal().reveal(".animation-right", {
+        origin: "right",
+        duration: 1000,
+        distance: "25rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menuphoto1_2", {
+        origin: "bottom",
+        duration: 1000,
+        distance: "15rem",
+        delay: 400,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menuphoto1_1", {
+        origin: "top",
+        duration: 1000,
+        distance: "15rem",
+        delay: 400,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menuphoto2", {
+        origin: "right",
+        duration: 1000,
+        distance: "15rem",
+        delay: 400,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menuinfos", {
+        origin: "left",
+        duration: 1000,
+        distance: "15rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".recipetitle h1", {
+        origin: "top",
+        duration: 1000,
+        distance: "1rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".recipetitle a", {
+        origin: "bottom",
+        duration: 1000,
+        distance: "1rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".recipetitle h1", {
+        reset: true,
+        origin: "top",
+      });
+    </script>
+  </body>
+</html>

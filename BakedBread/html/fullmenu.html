@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>BakedBread</title>
+  </head>
+  <body>
+    <!-- Home Page -->
+    <section class="MenuPage" id="MenuPage">
+      <div class="Navbar">
+        <div class="container">
+          <h2 class="logo"><i class="fas fa-bread-slice"></i> BAKEDBREAD</h2>
+          <nav>
+            <ul class="navbar-ul">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#ourstory">Our Story</a></li>
+              <li><a href="index.html#OurRecipe">Recipe</a></li>
+              <li><a href="index.html#menu">Menu</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="menupage_main">
+        <div class="menuinfo">
+          <div class="menupage_info">
+            <h3>Menu</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quia
+              esse tempore ducimus praesentium, consectetur doloremque placeat!
+              Eaque natus deserunt incidunt iusto sint molestias cum
+              exercitationem veniam.
+            </p>
+            <button>View our full menu</button>
+          </div>
+        </div>
+        <div class="menupage_photo">
+          <img src="../images/bakery2.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu page favorite -->
+    <section class="menupage_favoritebread">
+      <div class="menupage_favor_title">
+        <h3>Our Favorite Breads</h3>
+      </div>
+      <div class="menupage_favor_main">
+        <div class="menupage_favor_main_photo photo1">
+          <div class="menupage_favor_main_info info-left">
+            <h5 class="menu_favor_main_title">Bread</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              nisi id similique itaque recusandae aliquid inventore iure. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <img src="../images/wholewheat.jpg" alt="" />
+        </div>
+        <div class="menupage_favor_main_photo photo2">
+          <img src="../images/cinnamonchip.jpg" alt="" />
+          <div class="menupage_favor_main_info info-right">
+            <h5 class="menu_favor_main_title">Bread</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              nisi id similique itaque recusandae aliquid inventore iure. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <div class="menupage_favor_main_photo photo3">
+          <div class="menupage_favor_main_info info-left">
+            <h5 class="menu_favor_main_title">Bread</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              nisi id similique itaque recusandae aliquid inventore iure. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <img src="../images/dakota.jpg" alt="" />
+        </div>
+        <div class="menupage_favor_main_photo photo4">
+          <img src="../images/plain.jpg" alt="" />
+          <div class="menupage_favor_main_info info-right">
+            <h5 class="menu_favor_main_title">Bread</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              nisi id similique itaque recusandae aliquid inventore iure. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Contact Us page -->
+    <footer class="footer" id="contact">
+      <div class="footercontainer">
+        <div class="footercontact">
+          <h4 class="footer-logo">
+            <i class="fas fa-bread-slice"></i> BAKEDBREAD
+          </h4>
+          <div class="footercontact_detail">
+            <div class="footer_phone">
+              <h5>Phone</h5>
+              <h5>Location</h5>
+            </div>
+            <div class="footer_location">
+              <h5>123 - 456 - 7890</h5>
+              <h5>1234 baked bread Street</h5>
+            </div>
+          </div>
+        </div>
+        <div class="footersocial">
+          <div class="social">
+            <i class="fab fa-twitter footer-icon"></i>
+            <i class="fab fa-instagram footer-icon"></i>
+            <i class="fab fa-facebook-square footer-icon"></i>
+            <i class="fab fa-yelp footer-icon"></i>
+          </div>
+          <p>&copy 2020 - 2021 BakedBread | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      ScrollReveal().reveal(".menuinfo", {
+        origin: "left",
+        duration: 1000,
+        distance: "25rem",
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menupage_photo", {
+        scale: 0,
+        duration: 1000,
+        delay: 500,
+        reset: true,
+      });
+      ScrollReveal().reveal(".menupage_favor_main_photo img", {
+        scale: 0,
+        duration: 1000,
+        delay: 100,
+        reset: true,
+      });
+      ScrollReveal().reveal(".info-left", {
+        origin: "left",
+        duration: 1000,
+        distance: "15rem",
+        delay: 800,
+        reset: true,
+      });
+      ScrollReveal().reveal(".info-right", {
+        origin: "right",
+        duration: 1000,
+        distance: "15rem",
+        delay: 800,
+        reset: true,
+      });
+    </script>
+  </body>
+</html>
